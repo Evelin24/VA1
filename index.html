@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Crescimento Populacional</title>
+    <!-- Aqui você coloca o caminho do arquivo CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Aqui você coloca o caminho do arquivo JavaScript -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulação de Crescimento Populacional</h1>
+        <label for="ano-inicial">Ano inicial:</label>
+        <input type="number" id="ano-inicial" required>
+        
+        <label for="populacao">População:</label>
+        <input type="number" id="populacao" required>
+        
+        <label for="taxa-crescimento">Taxa de crescimento populacional (%):</label>
+        <input type="number" id="taxa-crescimento" required>
+        
+        <label for="ano-final">Ano final:</label>
+        <input type="number" id="ano-final" required>
+        
+        <button onclick="simularCrescimento()">Simular</button>
+        
+        <h2>Resultados:</h2>
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>
